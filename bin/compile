@@ -31,7 +31,7 @@ plat=$(uname|tr A-Z a-z)-$arch
 # Python
 venv=$cache/venv
 mkdir -p $cache/pip
-python=python2.7
+python=python2.6
 PATH=$buildpack/$plat/bin:$venv/bin:$PATH
 
 virtualenv() {
